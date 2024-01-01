@@ -10,6 +10,7 @@ import ProjectDetails from "./pages/portfolio/[project]/ProjectDetails";
 import Resume from "./pages/resume/Resume";
 import Contact from "./pages/contact/Contact";
 import PageNotFound from "./pages/404/PageNotFound";
+import About from "./pages/about/About";
 
 /**
  * Instructions for Customizing the Portfolio
@@ -37,9 +38,10 @@ import PageNotFound from "./pages/404/PageNotFound";
 function App() {
   // Personal details for the user
   const personalDetails = {
-    name: "Michael Yeates",
-    location: "United Kingdom",
-    email: "michael-yeates@outlook.com",
+    name: "Jeremiah Esieboma",
+    location: "Earth 🌍",
+    email: "esiebomaj@gmail.com",
+    availability: "Open to work",
     brand:
       "My unique blend of technical expertise, creative thinking, and background in psychology allows me to approach each project with a deep understanding of the end user's perspective, resulting in highly effective user-centred digital products.",
   };
@@ -47,7 +49,7 @@ function App() {
   const location = useLocation();
 
   // State to manage loader visibility
-  const [showLoader, setShowLoader] = useState(true);
+  const [showLoader, setShowLoader] = useState(false);
 
   const [originalTitle, setOriginalTitle] = useState();
 
@@ -73,7 +75,8 @@ function App() {
 
     // Listen for visibility change events
     window.addEventListener("visibilitychange", handleTabChange);
-    return () => window.removeEventListener("visibilitychange", handleTabChange);
+    return () =>
+      window.removeEventListener("visibilitychange", handleTabChange);
   }, [location, originalTitle]);
 
   return (
@@ -87,9 +90,32 @@ function App() {
           <Header />
           {/* Define routes */}
           <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Landing name={personalDetails.name} tagline={personalDetails.tagline} />} />
+            <Route
+              path="/"
+              element={
+                <Landing
+                  name={personalDetails.name}
+                  tagline={personalDetails.tagline}
+                />
+              }
+            />
             <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/resume" element={<Resume brand={personalDetails.brand} />} />
+            <Route
+              path="/resume"
+              element={<Resume brand={personalDetails.brand} />}
+            />
+            <Route
+              path="/about"
+              element={
+                <About
+                  name={personalDetails.name}
+                  availability={personalDetails.availability}
+                  email={personalDetails.email}
+                  location={personalDetails.location}
+                  brand={personalDetails.brand}
+                />
+              }
+            />
 
             <Route
               path="/contact"
@@ -102,7 +128,10 @@ function App() {
               }
             />
             <Route path="/page-not-found" element={<PageNotFound />} />
-            <Route path="/portfolio/:projectTitle" element={<ProjectDetails />} />
+            <Route
+              path="/portfolio/:projectTitle"
+              element={<ProjectDetails />}
+            />
             {/* Fallback route for unknown paths */}
             <Route path="*" element={<Navigate to="/page-not-found" />} />
           </Routes>

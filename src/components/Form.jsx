@@ -65,7 +65,9 @@ const Form = () => {
 
     // Validate and set error states
     formData.name === "" ? setNameError(true) : setNameError(false);
-    formData.email === "" || !validator.validate(formData.email) ? setEmailError(true) : setEmailError(false);
+    formData.email === "" || !validator.validate(formData.email)
+      ? setEmailError(true)
+      : setEmailError(false);
     formData.subject === "" ? setSubjectError(true) : setSubjectError(false);
     formData.message === "" ? setMessageError(true) : setMessageError(false);
 
@@ -135,7 +137,13 @@ const Form = () => {
       return "Please wait...";
     } else if (success) {
       return "Message Sent";
-    } else if (failed || nameError || messageError || emailError || subjectError) {
+    } else if (
+      failed ||
+      nameError ||
+      messageError ||
+      emailError ||
+      subjectError
+    ) {
       return "Try again";
     } else {
       return "Send Message";
@@ -154,7 +162,10 @@ const Form = () => {
     >
       <h4 className="contentTitle">Send a Message</h4>
       {/* Input fields */}
-      <div className="col-12 col-md-6 formGroup" style={{ display: "inline-block" }}>
+      <div
+        className="col-12 col-md-6 formGroup"
+        style={{ display: "inline-block" }}
+      >
         <input
           type="text"
           className={`formControl ${nameError ? "formError" : ""}`}
@@ -169,7 +180,10 @@ const Form = () => {
           autoComplete="name"
         />
       </div>
-      <div className="col-12 col-md-6 formGroup" style={{ display: "inline-block" }}>
+      <div
+        className="col-12 col-md-6 formGroup"
+        style={{ display: "inline-block" }}
+      >
         <input
           type="text"
           className={`formControl ${emailError ? "formError" : ""}`}
@@ -218,7 +232,14 @@ const Form = () => {
       <motion.div className="col-12 formGroup formSubmit">
         <Button
           name={handleButtonText()}
-          disabled={nameError || messageError || emailError || subjectError || sending || success}
+          disabled={
+            nameError ||
+            messageError ||
+            emailError ||
+            subjectError ||
+            sending ||
+            success
+          }
         />
       </motion.div>
     </motion.form>

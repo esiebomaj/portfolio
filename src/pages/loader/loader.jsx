@@ -59,7 +59,14 @@ const Loader = ({ setShowLoader }) => {
   };
 
   return (
-    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+      }}
+    >
       {/* Animated SVG */}
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"

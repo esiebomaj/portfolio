@@ -1,4 +1,5 @@
 import PageHeader from "../../components/PageHeader";
+import AboutMe from "../../components/AboutMe";
 
 const Resume = ({ brand }) => {
   return (
