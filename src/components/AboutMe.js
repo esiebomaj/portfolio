@@ -40,7 +40,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
         </motion.div>
         <motion.div
           className="personalInfo col-12 col-lg-8"
-          ref={ref}
+          // ref={ref}
           initial={{ x: "10vw", opacity: 0 }}
           animate={inView ? { x: 0, opacity: 1 } : { x: "10vw", opacity: 0 }}
           transition={{ duration: 0.4, ease: "easeInOut" }}
@@ -58,7 +58,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
                 animate={inView ? "animate" : "initial"}
               >
                 <motion.p variants={paragraphVariants}>
-                  Currenty building API's to process fast and secure bank
+                  Currenty building systems to process fast and secure bank
                   payments at{" "}
                   <a target="_blank" rel="noreferrer" href="https://wafi.cash">
                     wafi.cash
@@ -69,7 +69,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
                 <motion.p variants={paragraphVariants}>
                   Skills: Python, Javascript, Go Programming language, AWS
                   (certified Solutions Architect), React.js, Django, Flask,
-                  Node.js etc. I am passionate about designing and achitecting
+                  Node.js etc. I am passionate about designing and architecting
                   secure and scalable systems in the cloud
                 </motion.p>
                 <br />

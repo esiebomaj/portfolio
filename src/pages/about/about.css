@@ -45,6 +45,14 @@
   color: var(--secondary-text-color);
 }
 
+.contentDescription a {
+  color: var(--hl-color);
+}
+
+.contentDescription a:hover {
+  color: #03b979;
+}
+
 .infoContainer {
   border-top: 1px solid var(--grey);
   margin-top: var(--sm-spacing);
