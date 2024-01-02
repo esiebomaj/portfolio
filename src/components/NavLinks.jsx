@@ -57,6 +57,7 @@ const NavLinks = () => {
         >
           <a
             target="_blank"
+            rel="noreferrer"
             href="https://blog.aboutjeremiah.tech/"
             onClick={() => setIsMenuOpen(false)}
           >

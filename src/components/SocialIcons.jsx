@@ -24,6 +24,7 @@ const SocialIcons = () => {
       <a
         className="icon"
         target="_blank"
+        rel="noreferrer"
         style={styles.icon}
         href="https://github.com/esiebomaj"
       >
@@ -40,6 +41,7 @@ const SocialIcons = () => {
       <a
         className="icon"
         target="_blank"
+        rel="noreferrer"
         style={styles.icon}
         href="https://www.linkedin.com/in/jeremiahesieboma/"
       >
@@ -56,6 +58,7 @@ const SocialIcons = () => {
       <a
         className="icon"
         target="_blank"
+        rel="noreferrer"
         style={styles.icon}
         href="https://www.instagram.com/esiebomaj/"
       >
@@ -72,6 +75,7 @@ const SocialIcons = () => {
       <a
         className="icon"
         target="_blank"
+        rel="noreferrer"
         style={styles.icon}
         href="https://twitter.com/esiebomaj"
       >

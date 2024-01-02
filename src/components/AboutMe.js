@@ -60,7 +60,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
                 <motion.p variants={paragraphVariants}>
                   Currenty building API's to process fast and secure bank
                   payments at{" "}
-                  <a target="_blank" href="https://wafi.cash">
+                  <a target="_blank" rel="noreferrer" href="https://wafi.cash">
                     wafi.cash
                   </a>{" "}
                   (fullstack Engineer)
@@ -108,6 +108,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
             <div className="buttonContainer">
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://drive.google.com/file/d/1ziT1xmj5cdjoD5Fyqhi5dKeHvPzqHGrD/view?usp=sharing"
               >
                 <button className="btn downloadCV">Resume</button>
