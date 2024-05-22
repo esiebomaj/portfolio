@@ -47,9 +47,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
         >
           <div className="contentContainer">
             <h4>Nice to meet you</h4>
-            <h5>
-              I'm a Software Engineer who crafts amazing digital experiences!
-            </h5>
+            <h5>I'm a Software Engineer who crafts amazing digital experiences!</h5>
             <div className="contentDescription">
               <motion.div
                 className="contentDescription"
@@ -58,8 +56,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
                 animate={inView ? "animate" : "initial"}
               >
                 <motion.p variants={paragraphVariants}>
-                  Currenty building systems to process fast and secure bank
-                  payments at{" "}
+                  Currenty building systems to process fast and secure bank payments at{" "}
                   <a target="_blank" rel="noreferrer" href="https://wafi.cash">
                     wafi.cash
                   </a>{" "}
@@ -67,17 +64,15 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
                 </motion.p>
                 <br />
                 <motion.p variants={paragraphVariants}>
-                  Skills: Python, Javascript, Go Programming language, AWS
-                  (certified Solutions Architect), React.js, Django, Flask,
-                  Node.js etc. I am passionate about designing and architecting
-                  secure and scalable systems in the cloud
+                  Skills: Python, Javascript, Go Programming language, AWS (certified Solutions
+                  Architect), React.js, Django, Flask, Node.js etc. I am passionate about designing
+                  and architecting secure and scalable systems in the cloud
                 </motion.p>
                 <br />
                 <motion.p variants={paragraphVariants}>
-                  Life is a kaleidoscope of experiences, when I am not coding, I
-                  am finding magic in all the smallest things.
-                  <br />I love playing my guitar, swimming and exploring new
-                  places!.
+                  Life is a kaleidoscope of experiences, when I am not coding, I am finding magic in
+                  all the smallest things.
+                  <br />I love playing my guitar, swimming and exploring new places!.
                 </motion.p>
               </motion.div>
             </div>
