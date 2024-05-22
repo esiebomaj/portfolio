@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Routes, Route, useLocation, Navigate } from "react-router-dom";
+import ReactGA from "react-ga4";
 
 // Components
 import Loader from "./pages/loader/loader";
@@ -12,6 +13,8 @@ import Contact from "./pages/contact/Contact";
 import PageNotFound from "./pages/404/PageNotFound";
 import About from "./pages/about/About";
 
+
+ReactGA.initialize("G-Z372PX0R9C");
 /**
  * Instructions for Customizing the Portfolio
  * ------------------------------------------
@@ -50,8 +53,13 @@ function App() {
 
   // State to manage loader visibility
   const [showLoader, setShowLoader] = useState(false);
-
   const [originalTitle, setOriginalTitle] = useState();
+
+  useEffect(() => {
+    if (window.location.hostname.includes("localhost"))  return
+    console.log(location.pathname + location.search);
+    ReactGA.send({ hitType: "pageview", page: location.pathname + location.search});
+  }, [location]);
 
   useEffect(() => {
     // Hide loader when initial route is loaded
@@ -101,7 +109,7 @@ function App() {
             />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route
-              path="/resume"
+              path="/experiences"
               element={<Resume brand={personalDetails.brand} />}
             />
             <Route
