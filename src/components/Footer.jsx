@@ -19,12 +19,6 @@ const Footer = () => {
       {/* Social icons */}
       <SocialIcons />
 
-      <a className="footer-link" href="https://github.com/mdyeates">
-        <p>
-          <span>▷</span> Designed and built by Michael Yeates &copy;{" "}
-          {currentYear}
-        </p>
-      </a>
     </footer>
   );
 };
