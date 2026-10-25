@@ -44,7 +44,7 @@ function App() {
     name: "Jeremiah Esieboma",
     location: "Earth 🌍",
     email: "esiebomaj@gmail.com",
-    availability: "Open to work",
+    availability: "Open to new opportunities!",
     brand:
       "My unique blend of technical expertise, creative thinking, and background in psychology allows me to approach each project with a deep understanding of the end user's perspective, resulting in highly effective user-centred digital products.",
   };
