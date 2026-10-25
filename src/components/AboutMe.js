@@ -70,8 +70,8 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
                 </motion.p>
                 <br />
                 <motion.p variants={paragraphVariants}>
-                  Life like they say, is a kaleidoscope of experiences, when I am not writing code, I am finding magic in
-                  all the smallest things. Love playing the guitar, swimming and exploring new places!.
+                Life, as they say, is a kaleidoscope of experiences. When I’m not writing code, 
+                I’m finding magic in the little things. I love playing the guitar, swimming, and exploring new places!
                 </motion.p>
               </motion.div>
             </div>
