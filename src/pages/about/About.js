@@ -6,7 +6,7 @@ const About = ({ name, location, brand, email, availability }) => {
     <section className="about">
       <PageHeader
         title="About Me"
-        description="Let me introduce myself (Untill I dont have to)"
+        description="Introducing myself (Until I don't have to)"
       />
       <AboutMe
         name={name}

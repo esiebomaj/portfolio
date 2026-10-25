@@ -47,7 +47,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
         >
           <div className="contentContainer">
             <h4>Nice to meet you</h4>
-            <h5>I'm a Software Engineer, crafting amazing digital experiences!</h5>
+            <h5>I'm a Software Engineer,</h5>
             <div className="contentDescription">
               <motion.div
                 className="contentDescription"
@@ -66,13 +66,13 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
                 <motion.p variants={paragraphVariants}>
                   Skills: Python, Javascript, Go Programming language, AWS (certified Solutions
                   Architect), React.js, Django, Flask, Node.js etc. I have a lot of experience building AI agents and Agentic systems. 
-                  I am passionate about designing and architecting secure and scalable systems in the cloud.
+                  Also, passionate about designing and architecting secure and scalable systems in the cloud.
                 </motion.p>
                 <br />
                 <motion.p variants={paragraphVariants}>
-                  Life is a kaleidoscope of experiences, when I am not coding, I am finding magic in
+                  Life like they say, is a kaleidoscope of experiences, when I am not writing code, I am finding magic in
                   all the smallest things.
-                  <br />I love playing my guitar, swimming and exploring new places!.
+                  <br />love playing the guitar, swimming and exploring new places!.
                 </motion.p>
               </motion.div>
             </div>
@@ -104,7 +104,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://drive.google.com/file/d/1N8-lls1Z60RKLOBc9hZ-cgd2by8l0VF3/view?usp=sharing"
+                href="https://drive.google.com/file/d/1tDl5dYTXNK-o0h4JYHTolAe6SsjZEFQ-/view?usp=sharing"
               >
                 <button className="btn downloadCV">Resume</button>
                 <SocialIcons />
